@@ -32,19 +32,19 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - React + Vite
 - TypeScript
-- Tailwind CSS v4 (`@theme` tokens, `@utility` for typography and social-link styles)
-- Component-based layout (`ProfileCard` in `src/components`)
-- Mobile-first, centered card on a full-viewport background (`h-dvh`, `max-w-96`)
-- Inter variable font loaded locally (`src/assets/fonts`)
-- Avatar and social assets under `src/assets` (e.g. `avatar-abdelrhman.webp`)
+- Tailwind CSS v4 (`@theme` tokens, `@utility` for typography, gradients, and reusable component styles)
+- Component-based layout (`ResultSummary` in `src/components`)
+- Mobile-first responsive design with `sm:` breakpoint for desktop two-column layout
+- Hanken Grotesk variable font loaded locally (`src/assets/fonts`)
+- Custom SVG icon components with theme-aware stroke colors
 
 ### What I learned
 
-- Turning a profile mockup into a small React tree: semantic regions (`article`, `figure`, list of links) without over-abstracting.
-- Using Tailwind v4’s theme layer for brand colors and reusable `@utility` classes (`text-preset-*`, `social-link`) so JSX stays readable.
-- Building accessible social links: visible labels live inside each `<a>` so the link name matches what sighted users read and screen readers announce it correctly.
-- Pairing Vite path aliases with TypeScript for clean imports (`components`, `assets`).
-- Keeping the profile card as a focused, mostly static component while `App` owns page chrome (background, footer attribution).
+- Using Tailwind v4’s `@utility` directive for complex styles like gradient overlays and animated hover effects (pseudo-element opacity trick for transitioning gradients).
+- Applying gradients as text color with `bg-clip-text` and `text-transparent`.
+- Structuring data-driven components: separating score data, types, and icon components with barrel exports and path aliases for clean imports.
+- Semantic HTML choices: proper heading hierarchy, `aria-hidden` on decorative icons, and using grid rows (`grid-rows-[1fr_auto]`) instead of absolute positioning for robust footer placement.
+- Computing derived values (average score) from data rather than hardcoding them.
 
 ## Author
 
