@@ -9,10 +9,6 @@
   font-display: swap;
 }
 
-:root {
-  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
-}
-
 @theme {
   --color-light-red: hsl(0, 100%, 67%);
   --color-orangey-yellow: hsl(39, 100%, 56%);
@@ -23,12 +19,13 @@
   --color-light-royal-blue: hsl(241, 81%, 54%);
 
   --color-violet-blue: hsla(256, 72%, 46%, 1);
-  --color-persian-blue: hsla(241, 72%, 46%, 0);
 
   --color-white: hsl(0, 0%, 100%);
   --color-pale-blue: hsl(221, 100%, 96%);
   --color-light-lavender: hsl(241, 100%, 89%);
   --color-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
 }
 
 body {
