@@ -6,7 +6,7 @@ export default function App() {
       <main className="mx-auto w-full max-w-184">
         <ResultSummary />
       </main>
-      <footer className="text-preset-2 text-dark-gray-blue absolute bottom-4 w-full text-center font-light">
+      <footer className="text-dark-gray-blue absolute bottom-4 w-full text-center text-sm font-light">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
