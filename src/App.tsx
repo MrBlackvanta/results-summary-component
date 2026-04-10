@@ -2,7 +2,7 @@ import { ResultSummary } from "components";
 
 export default function App() {
   return (
-    <div className="bg-pale-blue relative grid min-h-dvh w-full grid-rows-[1fr_auto] sm:place-content-center">
+    <div className="bg-pale-blue relative grid min-h-dvh w-full grid-cols-1 grid-rows-[1fr_auto] sm:place-content-center">
       <main className="mx-auto w-full max-w-184 place-self-center">
         <ResultSummary />
       </main>
