@@ -47,7 +47,7 @@ export default function ResultSummary() {
             </li>
           ))}
         </ul>
-        <button className="bg-dark-gray-blue text-body-bold hover:gradient-1 w-full cursor-pointer rounded-full p-4 px-0.5 text-white transition-all duration-300 sm:mt-3.25">
+        <button className="bg-dark-gray-blue text-body-bold hover-gradient-1 w-full cursor-pointer rounded-full p-4 px-0.5 text-white sm:mt-3.25">
           Continue
         </button>
       </section>
