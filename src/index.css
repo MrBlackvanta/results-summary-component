@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 500 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
+}
+
+@theme {
+  --color-light-red: hsl(0, 100%, 67%);
+  --color-orangey-yellow: hsl(39, 100%, 56%);
+  --color-green-teal: hsl(166, 100%, 37%);
+  --color-cobalt-blue: hsl(234, 85%, 45%);
+
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: var(--font-hanken-grotesk);
+}
+
+@utility text-heading-xl {
+  @apply text-7xl leading-[72px] font-bold tracking-normal;
+}
+
+@utility text-heading-l {
+  @apply text-3xl leading-[42px] font-bold tracking-normal;
+}
+
+@utility text-heading-m {
+  @apply text-2xl leading-[31px] font-bold tracking-normal;
+}
+
+@utility text-body {
+  @apply text-lg leading-[23px] font-medium tracking-normal;
+}
+
+@utility text-body-bold {
+  @apply text-sm leading-[23px] font-bold tracking-normal;
+}
+
+@utility gradient-1 {
+  background-image: linear-gradient(
+    180deg,
+    #7755ff 0%,
+    #6943ff 0.01%,
+    #2f2ce9 100%
+  );
+}
+
+@utility box-shadow-1 {
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+}
+
+@utility footer-link {
+  @apply gradient-1 rounded-sm bg-clip-text font-bold text-transparent transition-colors;
+  @apply focus-visible:ring-light-slate-blue focus-visible:ring-offset-dark-gray-blue focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+}
