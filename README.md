@@ -21,7 +21,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/results-summary-component)
-- Live Site URL: [Netlify](https://vanta-results-summary-component.netlify.app)
+- Live Site URL: [Cloudflare](https://results-summary-component.abdelrhman-ahmed8881.workers.dev)
+- Mirror: [Netlify](https://vanta-results-summary-component.netlify.app)
 
 ## My process
 
