@@ -16,13 +16,12 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./screenshot.webp)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/results-summary-component)
 - Live Site URL: [Cloudflare](https://results-summary-component.abdelrhman-ahmed8881.workers.dev)
-- Mirror: [Netlify](https://vanta-results-summary-component.netlify.app)
 
 ## My process
 
@@ -46,6 +45,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
 - Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/abdelrhman-vanta/)
+- LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)

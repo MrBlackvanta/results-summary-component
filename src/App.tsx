@@ -7,16 +7,7 @@ export default function App() {
         <ResultSummary />
       </main>
       <footer className="text-dark-gray-blue mt-auto w-full pb-4 text-center text-sm font-light">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          className="footer-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
+        Coded by{" "}
         <a
           href="https://www.linkedin.com/in/abdelrhman-vanta/"
           className="footer-link"
