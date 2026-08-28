@@ -1,50 +1,37 @@
-# Frontend Mentor - Results summary component solution
+# Results summary component
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
-## Overview
-
-### Screenshot
+My solution to the [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
+challenge on Frontend Mentor.
 
 ![](./screenshot.webp)
 
-### Links
+- Live: https://results-summary-component.abdelrhman-ahmed8881.workers.dev
+- Code: https://github.com/MrBlackvanta/results-summary-component
 
-- Solution URL: [GitHub](https://github.com/MrBlackvanta/results-summary-component)
-- Live Site URL: [Cloudflare](https://results-summary-component.abdelrhman-ahmed8881.workers.dev)
+## Built with
 
-## My process
-
-### Built with
-
-- React + Vite
+- React and Vite
 - TypeScript
-- Tailwind CSS v4 (`@theme` tokens, `@utility` for typography, gradients, and reusable component styles)
-- Component-based layout (`ResultSummary` in `src/components`)
-- Mobile-first responsive design with `sm:` breakpoint for desktop two-column layout
-- Hanken Grotesk variable font loaded locally (`src/assets/fonts`)
-- Custom SVG icon components with theme-aware stroke colors
+- Tailwind CSS v4
+- Hanken Grotesk, self-hosted
 
-### What I learned
+## Notes
 
-- Using Tailwind v4’s `@utility` directive for complex styles like gradient overlays and animated hover effects (pseudo-element opacity trick for transitioning gradients).
-- Applying gradients as text color with `bg-clip-text` and `text-transparent`.
-- Structuring data-driven components: separating score data, types, and icon components with barrel exports and path aliases for clean imports.
-- Semantic HTML choices: proper heading hierarchy, `aria-hidden` on decorative icons, and using grid rows (`grid-rows-[1fr_auto]`) instead of absolute positioning for robust footer placement.
-- Computing derived values (average score) from data rather than hardcoding them.
+The average score is computed from the data rather than typed in, so the two can't drift
+apart.
+
+Score categories live in one array with their icon and colour, which keeps the JSX to a
+map instead of four near-identical blocks.
+
+The card is a two-row grid (`grid-rows-[1fr_auto]`) so the button sits at the bottom
+without absolute positioning, and it survives the content getting taller.
+
+Gradients are `@utility` classes. The heading uses `bg-clip-text` with transparent text
+to run the gradient through the type, and the hover state cross-fades a second gradient
+on a pseudo-element, since gradients themselves don't transition.
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
-- Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
-- LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
+- [LinkedIn](https://www.linkedin.com/in/abdelrhman-vanta/)
+- [UpWork](https://www.upwork.com/freelancers/mrblackvanta)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/MrBlackvanta)
