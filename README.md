@@ -10,25 +10,11 @@ challenge on Frontend Mentor.
 
 ## Built with
 
-- React and Vite
+- React
+- Vite
 - TypeScript
-- Tailwind CSS v4
+- Tailwind CSS
 - Hanken Grotesk, self-hosted
-
-## Notes
-
-The average score is computed from the data rather than typed in, so the two can't drift
-apart.
-
-Score categories live in one array with their icon and colour, which keeps the JSX to a
-map instead of four near-identical blocks.
-
-The card is a two-row grid (`grid-rows-[1fr_auto]`) so the button sits at the bottom
-without absolute positioning, and it survives the content getting taller.
-
-Gradients are `@utility` classes. The heading uses `bg-clip-text` with transparent text
-to run the gradient through the type, and the hover state cross-fades a second gradient
-on a pseudo-element, since gradients themselves don't transition.
 
 ## Author
 
